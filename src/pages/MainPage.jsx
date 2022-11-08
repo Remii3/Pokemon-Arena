@@ -16,12 +16,12 @@ const MainPage = () => {
       <div className="bg-danger text-center mt-5">
         <h1 className="py-1">Welcome to the city far traveler</h1>
       </div>
-      <div className="mainPage_card-container mx-auto mt-5 d-flex align-items-center justify-content-center">
+      <div className="mainPage_card-container mx-auto mt-5 d-flex flex-md-row flex-column align-items-center justify-content-center">
         {importantLinks.map((link, id) => (
           <div
             key={id}
             id={id}
-            className="card h-100 mx-3 mainPage_card border-0"
+            className="card h-100 mx-2 mt-3 mainPage_card border-0"
           >
             <NavLink to={`/${link.title}`} className="w-100">
               <div className="card-img-top bg-black">
