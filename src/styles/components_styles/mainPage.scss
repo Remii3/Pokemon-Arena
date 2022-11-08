@@ -1,0 +1,13 @@
+.mainPage_card-container {
+    width: 50%;
+}
+
+.mainPage_card {
+    // flex-basis: 50%;
+    box-shadow: 0 .5rem 1rem rgba($secondary, .15);
+    transition: scale .3s ease;
+}
+
+.mainPage_card:hover {
+    scale: 1.1;
+}
