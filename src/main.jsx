@@ -2,15 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
-import './styles/css/main.css';
+import './styles/main_styles/main.scss';
 
 // bs 5 import
-import './styles/css/bootstrap.css';
-import './styles/css/bootstrap-grid.css';
-import './styles/css/bootstrap-reboot.css';
-import './styles/css/bootstrap-utilities.css';
-import './styles/css/bootstrap.css';
-import './functions/bootstrap5';
+import './functions/bootstrap.bundle';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
