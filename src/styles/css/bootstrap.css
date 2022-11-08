@@ -35,6 +35,7 @@
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
   --bs-danger: #4e0e04;
+
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
   --bs-primary-rgb: 13, 110, 253;
@@ -43,6 +44,7 @@
   --bs-info-rgb: 13, 202, 240;
   --bs-warning-rgb: 255, 193, 7;
   --bs-danger-rgb: 78, 14, 4;
+
   --bs-light-rgb: 248, 249, 250;
   --bs-dark-rgb: 33, 37, 41;
   --bs-white-rgb: 255, 255, 255;
@@ -79,6 +81,7 @@
 *::after {
   box-sizing: border-box;
   text-decoration: none !important;
+
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -1893,6 +1896,7 @@ progress {
   --bs-table-active-bg: #c9bdbb;
   --bs-table-active-color: #1c1c1c;
   --bs-table-hover-bg: #cec2c0;
+
   --bs-table-hover-color: #1c1c1c;
   color: var(--bs-table-color);
   border-color: var(--bs-table-border-color);
@@ -2733,7 +2737,7 @@ textarea.form-control-lg {
   margin-top: 0.25rem;
   font-size: 0.875em;
   color: #4e0e04;
-}
+
 
 .invalid-tooltip {
   position: absolute;
@@ -2746,6 +2750,7 @@ textarea.form-control-lg {
   font-size: 0.875rem;
   color: #fff;
   background-color: rgba(78, 14, 4, 0.9);
+
   border-radius: 0.375rem;
 }
 
@@ -2760,6 +2765,7 @@ textarea.form-control-lg {
   border-color: #4e0e04;
   padding-right: calc(1.5em + 0.75rem);
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%234e0e04'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%234e0e04' stroke='none'/%3e%3c/svg%3e");
+
   background-repeat: no-repeat;
   background-position: right calc(0.375em + 0.1875rem) center;
   background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
@@ -2767,6 +2773,7 @@ textarea.form-control-lg {
 .was-validated .form-control:invalid:focus, .form-control.is-invalid:focus {
   border-color: #4e0e04;
   box-shadow: 0 0 0 0.25rem rgba(78, 14, 4, 0.25);
+
 }
 
 .was-validated textarea.form-control:invalid, textarea.form-control.is-invalid {
@@ -2780,12 +2787,14 @@ textarea.form-control-lg {
 .was-validated .form-select:invalid:not([multiple]):not([size]), .was-validated .form-select:invalid:not([multiple])[size="1"], .form-select.is-invalid:not([multiple]):not([size]), .form-select.is-invalid:not([multiple])[size="1"] {
   padding-right: 4.125rem;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e"), url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%234e0e04'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%234e0e04' stroke='none'/%3e%3c/svg%3e");
+
   background-position: right 0.75rem center, center right 2.25rem;
   background-size: 16px 12px, calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
 }
 .was-validated .form-select:invalid:focus, .form-select.is-invalid:focus {
   border-color: #4e0e04;
   box-shadow: 0 0 0 0.25rem rgba(78, 14, 4, 0.25);
+
 }
 
 .was-validated .form-control-color:invalid, .form-control-color.is-invalid {
@@ -2803,6 +2812,7 @@ textarea.form-control-lg {
 }
 .was-validated .form-check-input:invalid ~ .form-check-label, .form-check-input.is-invalid ~ .form-check-label {
   color: #4e0e04;
+
 }
 
 .form-check-inline .form-check-input ~ .invalid-feedback {
@@ -2996,6 +3006,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-color: #fff;
   --bs-btn-disabled-bg: #4e0e04;
   --bs-btn-disabled-border-color: #4e0e04;
+
 }
 
 .btn-light {
@@ -3131,6 +3142,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-color: #4e0e04;
   --bs-btn-disabled-bg: transparent;
   --bs-btn-disabled-border-color: #4e0e04;
+
   --bs-gradient: none;
 }
 
@@ -4760,6 +4772,7 @@ textarea.form-control-lg {
 }
 .alert-danger .alert-link {
   color: #260602;
+
 }
 
 .alert-light {
@@ -5162,6 +5175,7 @@ textarea.form-control-lg {
   color: #fff;
   background-color: #2f0802;
   border-color: #2f0802;
+
 }
 
 .list-group-item-light {
@@ -6779,6 +6793,7 @@ textarea.form-control-lg {
 .text-bg-danger {
   color: #fff !important;
   background-color: RGBA(78, 14, 4, var(--bs-bg-opacity, 1)) !important;
+
 }
 
 .text-bg-light {
@@ -6831,6 +6846,7 @@ textarea.form-control-lg {
 }
 .link-danger:hover, .link-danger:focus {
   color: #3e0b03 !important;
+
 }
 
 .link-light {

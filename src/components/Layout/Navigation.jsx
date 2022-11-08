@@ -2,6 +2,7 @@ import { NavLink } from 'react-router-dom';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
+
 const Navigation = () => {
   return (
     <nav className="navbar">
@@ -20,6 +21,7 @@ const Navigation = () => {
             Shop
           </NavLink>
           <NavLink className="nav-item px-2" to={'/Settings'}>
+
             Settings
           </NavLink>
         </ul>
