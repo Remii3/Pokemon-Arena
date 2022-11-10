@@ -22,4 +22,5 @@ $theme-colors: map-merge($map1: $theme-colors, $map2: $custom-colors);
 
 body {
     background-color: $custom-black;
+    color: $custom-white
 }
