@@ -13,8 +13,10 @@ const MainPage = () => {
   ];
   return (
     <>
-      <div className="bg-danger text-center mt-5">
-        <h1 className="py-1">Welcome to the city far traveler</h1>
+      <div className="bg-custom-red text-center mt-5">
+        <h1 className="py-1 text-custom-white ">
+          Welcome to the city far traveler
+        </h1>
       </div>
       <div className="mainPage_card-container mx-auto mt-5 d-flex flex-md-row flex-column align-items-center justify-content-center">
         {importantLinks.map((link, id) => (

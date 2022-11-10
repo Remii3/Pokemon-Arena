@@ -1,7 +1,25 @@
-@import '../bootstrap5/bootstrap.scss';
-@import '../bootstrap5/bootstrap-grid.scss';
-@import '../bootstrap5/bootstrap-reboot.scss';
-@import '../bootstrap5/bootstrap-utilities.scss';
-
 @import "../components_styles/navigation.scss";
 @import "../components_styles/mainPage.scss";
+
+$custom-colors: (
+    "custom-white": #f4fdff,
+    "custom-black": #151922,
+    "custom-red": #8a0303
+);
+
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+$theme-colors: map-merge($map1: $theme-colors, $map2: $custom-colors);
+
+@import "~bootstrap/scss/bootstrap";
+@import "./variables";
+
+* {
+    text-decoration: none !important;
+}
+
+body {
+    background-color: $custom-black;
+}

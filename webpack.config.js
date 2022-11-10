@@ -3,6 +3,7 @@ import path from 'path';
 export default {
   mode: 'development',
   entry: './src/main.jsx',
+  watch: true,
   output: {
     path: path.resolve('./', 'dist'),
     filename: 'bundle.js',
