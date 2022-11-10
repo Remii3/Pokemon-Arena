@@ -1,6 +1,3 @@
-@import "../components_styles/navigation.scss";
-@import "../components_styles/mainPage.scss";
-
 $custom-colors: (
     "custom-white": #f4fdff,
     "custom-black": #151922,
@@ -14,13 +11,9 @@ $custom-colors: (
 $theme-colors: map-merge($map1: $theme-colors, $map2: $custom-colors);
 
 @import "~bootstrap/scss/bootstrap";
+
 @import "./variables";
+@import "./reboot";
 
-* {
-    text-decoration: none !important;
-}
-
-body {
-    background-color: $custom-black;
-    color: $custom-white
-}
+@import "../components_styles/navigation.scss";
+@import "../components_styles/mainPage.scss";
