@@ -1,9 +1,13 @@
 import React from 'react';
+import ShopItem from './ShopItem';
 
-const Shopkeeper = ({ items, transferItemHandler }) => {
-  const transferItem = item => {
-    transferItemHandler(item, 'shopkeeper');
-  };
+const Shopkeeper = ({
+  items,
+  money,
+  SELLERS,
+  PRICE_MULTIPLAYERS,
+  transferItemHandler,
+}) => {
   return (
     <section id="shop_keeper_eq">
       <div className="shop_keeper_eq-titleSpace">
@@ -11,11 +15,17 @@ const Shopkeeper = ({ items, transferItemHandler }) => {
         <p>Care to do some trade?</p>
       </div>
       <div className="shop_keeper_eq-itemsSpace">
+        <p>Cash: {money}</p>
         <ul>
           {items.map((item, id) => (
-            <li key={item.id} id={id} onClick={() => transferItem(item)}>
-              <a href="#">{item.name}</a>
-            </li>
+            <ShopItem
+              key={id}
+              id={id}
+              item={item}
+              priceMultiplayer={PRICE_MULTIPLAYERS.SHOPKEEPER}
+              seller={SELLERS.SHOPKEEPER}
+              transferItemHandler={transferItemHandler}
+            />
           ))}
         </ul>
       </div>

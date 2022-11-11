@@ -8,8 +8,12 @@ export const playerDataSlice = createSlice({
   name: 'playerData',
   initialState,
   reducers: {
-    incrementMoney: state => {},
-    decrementMoney: state => {},
+    incrementMoney: (state, data) => {
+      state.money += data.payload;
+    },
+    decrementMoney: (state, data) => {
+      state.money -= data.payload;
+    },
   },
 });
 
